@@ -1,11 +1,9 @@
-import { Helmet } from 'react-helmet'
+import { useSetDocumentTitle } from './useSetDocumentTitle'
 
 const Page1 = () => {
+  useSetDocumentTitle('Page 1')
   return (
     <div>
-      <Helmet>
-        <title>Page 1</title>
-      </Helmet>
       Page 1
     </div>
   )
